@@ -7,7 +7,16 @@ $(document).ready(function(){
         // $('.header__logo').show("slide", { direction: "left" }, 100);
         //при открытом меню блокируем прокрутку страницы
         $('body').toggleClass('lock');
-
+        // if (($(".header__container").style.width) > '0px') {
+        //     $( ".header__container" ).effect( "size", {
+        //         to: { width: 500 }
+        //       }, 1000 );
+        // } else {
+        //     $( ".header__container" ).effect( "size", {
+        //         to: { width: 728 }
+        //       }, 1000 );
+        // }
+        // jQuery.effects.scaledDimensions( $( ".header__container" ), 50%  'horizontal')
         // //если с открытым меню увеличить окно то бургер скроектся
         // if(windowWidth > 767.9)$(".header__burger, .header__link, .header__burger-menu, .checking").toggleClass('active');
     })
@@ -30,4 +39,5 @@ $( ".slide" ).toggle( "slide" , { direction: "left" }, 0);
   $( document ).click(function() {
    
     $( ".slide" ).toggle( "slide" , { direction: "left" }, 1000);
+    
   });

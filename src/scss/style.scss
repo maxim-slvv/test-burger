@@ -4,14 +4,14 @@
 body {
     font-family: 'Gilroy';
     
-    background: #9bda7e;
+    background: #2b3834;
 }
 [class*="__container"] {
     width: fit-content;
-    border: 1px solid red;
+    border: 1px solid rgb(136, 255, 0);
     justify-content: left;
-    overflow: hidden;
-    overflow-y: hidden;
+    // overflow: hidden;
+    // overflow-y: hidden;
   
 }
 

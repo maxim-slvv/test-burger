@@ -104,15 +104,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 body {
   font-family: "Gilroy";
-  background: #9bda7e;
+  background: #2b3834;
 }
 
 [class*=__container] {
   width: fit-content;
-  border: 1px solid red;
+  border: 1px solid rgb(136, 255, 0);
   justify-content: left;
-  overflow: hidden;
-  overflow-y: hidden;
 }
 
 #growing {
@@ -133,24 +131,49 @@ button {
 }
 
 .header__btn {
+  color: aliceblue;
   height: 30px;
   width: 100%;
 }
 
+.menu__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu__icon img {
-  padding-left: 35px;
+  display: flex;
+  padding-left: 10px;
   padding-right: 10px;
 }
 
 .menu__item {
   display: flex;
   align-items: center;
-  height: 30px;
+  padding-left: 14px;
+  padding-right: 10px;
+  height: 40px;
+  margin: 10px;
+  border: 1px solid rgb(137, 137, 131);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.content h1 {
+  font-size: 20px;
+  display: flex;
+  margin-top: 50px;
 }
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .header__box {
   display: flex;
