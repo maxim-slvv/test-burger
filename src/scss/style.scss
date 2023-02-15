@@ -1,0 +1,18 @@
+@import "null";
+@import "fonts";
+
+body {
+    font-family: 'Gilroy';
+    
+    background: #9bda7e;
+}
+[class*="__container"] {
+    width: fit-content;
+    border: 1px solid red;
+    justify-content: left;
+    overflow: hidden;
+    overflow-y: hidden;
+  
+}
+
+@import "header";

@@ -1,0 +1,109 @@
+#growing {
+    transition: all 3s color 2s;
+    min-width: 100%;
+}
+.header__logo{
+    width: 290px;
+    // background-color: rgb(243, 27, 27);
+    background-color: inherit;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    // background-color: rgb(8, 124, 218);
+    background-color: inherit;
+}
+.header__btn{
+    height: 30px;
+    width: 100%;
+}
+.menu__icon img{
+
+    padding-left: 35px;
+    padding-right: 10px;
+}
+.header__box{
+    // width: fit-content;
+}
+
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    &__box{
+        display: flex;
+        align-items: center;
+        background-color: rgb(3, 14, 23);
+        height: 84px;
+    }
+    &__burger{
+        
+        display: none;
+        @media (max-width:767.9px) {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 10;
+            margin-right: 25px;
+            margin-left: 30px;
+        }
+    }
+    &__burger span {
+        @media (max-width:767.9px) {
+            position: absolute;
+            background: rgba(255, 255, 255, 1);
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+        }
+    }
+    &__burger:before,&__burger:after{
+        @media (max-width:767.9px) {
+            content: '';
+            background: rgba(255, 255, 255, 1);
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+        }
+    }
+    &__burger:before{
+        top: 0;
+    }
+    &__burger:after{
+        bottom: 0;
+    }
+    //?----------------------при нажатии на бургер-------------------
+    //?------------------когда появляется класс active---------------
+    &__burger.active:before { 
+        transform: rotate(45deg); //вращение псевдоэлемента
+        top: 9px;
+    }
+    &__burger.active:after { 
+        transform: rotate(-45deg); //вращение псевдоэлемента
+        bottom: 9px;
+    }
+    &__burger.active span {
+        transform: scale(0); // скрываем центральный элемент бургера
+    }
+    //?------------------содержимое бургер меню-----------------------
+    &__box.active {
+        
+    
+    
+    }
+
+}
